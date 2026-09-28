@@ -1,4 +1,4 @@
-import { ArrowRight, Mail, Sparkles } from 'lucide-react'
+import { ArrowRight, Download, Mail, Sparkles } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from '@/components/brand-icons'
 import { profile } from '@/lib/portfolio-data'
 
@@ -24,7 +24,7 @@ export function HeroSection() {
 
           <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">{profile.intro}</p>
 
-          <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
               href="#projects"
               className="group inline-flex items-center justify-center gap-2 rounded-xl bg-brand-gradient px-6 py-3.5 font-medium text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:shadow-xl hover:shadow-accent/30"
@@ -38,6 +38,14 @@ export function HeroSection() {
             >
               <Mail className="size-4" aria-hidden="true" />
               Contact Me
+            </a>
+            <a
+              href={profile.resume}
+              download
+              className="group glass inline-flex items-center justify-center gap-2 rounded-xl border-primary/40 px-6 py-3.5 font-medium transition-colors hover:border-accent/60 hover:bg-white/10"
+            >
+              <Download className="size-4 text-accent transition-transform group-hover:translate-y-0.5" aria-hidden="true" />
+              Download Resume
             </a>
           </div>
 
