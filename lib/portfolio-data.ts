@@ -9,6 +9,7 @@ export const profile = {
   location: 'Andhra Pradesh, India',
   github: 'https://github.com/palagirithasneem',
   linkedin: 'https://www.linkedin.com/in/palagiri-thasneem',
+  resume: '/Palagiri-Thasneem-Resume.pdf',
 }
 
 export const navLinks = [
